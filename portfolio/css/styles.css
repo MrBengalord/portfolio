@@ -239,7 +239,6 @@ a:hover {
 .profile-image img {
     width: 100%; /* Makes the image responsive */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Optional: makes the image circular */
 }
 
 .profile-image {
@@ -497,8 +496,21 @@ a:hover {
     background-color: var(--accent-color);
     top: 0;
     bottom: 0;
-    left: 20%;
-    margin-left: -1px;
+    margin-left: 0; /* Убираем отрицательный отступ */
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent-color);
+    top: 15px;
+    left: -10px; /* Совмещаем с линией */
+    margin-left: 0; /* Убираем отрицательный отступ */
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .timeline-item {
@@ -507,21 +519,6 @@ a:hover {
     background-color: inherit;
     width: 100%;
     margin-bottom: 40px; /* Increased margin for more spacing */
-}
-
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px; /* Increased size */
-    height: 20px; /* Increased size */
-    background-color: var(--primary-color);
-    border: 2px solid var(--accent-color);
-    top: 15px;
-    left: 20%;
-    margin-left: -10px; /* Adjusted for centering */
-    border-radius: 50%; /* Make it circular */
-    z-index: 1;
 }
 
 .timeline-date {
