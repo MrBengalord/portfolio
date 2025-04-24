@@ -235,6 +235,10 @@ a:hover {
     border: 2px solid var(--accent-color);
     box-shadow: 0 0 15px rgba(252, 163, 17, 0.3);
 }
+.Profile Image {
+    width: 200px;
+    height: 200px;
+}
 
 .profile-image {
     width: 100%;
