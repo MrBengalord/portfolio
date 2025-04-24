@@ -502,24 +502,25 @@ a:hover {
 }
 
 .timeline-item {
-    padding: 10px 40px 10px 70px;
+    padding: 20px 40px 20px 70px; /* Increased top and bottom padding */
     position: relative;
     background-color: inherit;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin for more spacing */
 }
+
 
 .timeline-item::after {
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 20px; /* Increased size */
+    height: 20px; /* Increased size */
     background-color: var(--primary-color);
     border: 2px solid var(--accent-color);
     top: 15px;
     left: 20%;
-    margin-left: -8px;
-    border-radius: 0;
+    margin-left: -10px; /* Adjusted for centering */
+    border-radius: 50%; /* Make it circular */
     z-index: 1;
 }
 
@@ -527,11 +528,13 @@ a:hover {
     position: absolute;
     width: 20%;
     padding-right: 30px;
-    left: 0;
+    left: -10;
     text-align: right;
     font-family: 'VT323', monospace;
     color: var(--accent-color);
+    top: 20px; /* Adjusted top position */
 }
+
 
 .date-range {
     display: block;
@@ -655,13 +658,13 @@ a:hover {
     
     .timeline-item {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 50px;
         padding-right: 25px;
     }
     
     .timeline-item::after {
         left: 15px;
-    }
+    }   
     
     .timeline-date {
         width: auto;
@@ -669,6 +672,7 @@ a:hover {
         padding: 0 0 20px 0;
         left: 0;
         text-align: left;
+        top: 0; /* Reset top position */
     }
     
     .timeline-content {
