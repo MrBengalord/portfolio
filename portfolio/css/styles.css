@@ -496,7 +496,7 @@ a:hover {
     background-color: var(--accent-color);
     top: 0;
     bottom: 0;
-    margin-left: 0; /* Убираем отрицательный отступ */
+    margin-left: 20px; /* Убираем отрицательный отступ */
 }
 
 .timeline-item::after {
@@ -507,8 +507,8 @@ a:hover {
     background-color: var(--primary-color);
     border: 2px solid var(--accent-color);
     top: 15px;
-    left: -10px; /* Совмещаем с линией */
-    margin-left: 0; /* Убираем отрицательный отступ */
+    left: -11px; /* Совмещаем с линией */
+    margin-left: 20px; /* Убираем отрицательный отступ */
     border-radius: 50%;
     z-index: 1;
 }
@@ -523,13 +523,14 @@ a:hover {
 
 .timeline-date {
     position: absolute;
-    width: 20%;
-    padding-right: 30px;
-    left: -10;
-    text-align: right;
+    top: 10px;           /* Прижимаем к верхнему краю */
+    right: 10px;         /* Прижимаем к правому краю */
+    width: 30%;
+    text-align: right; /* Выравнивание текста по правому краю */
     font-family: 'VT323', monospace;
     color: var(--accent-color);
-    top: 20px; /* Adjusted top position */
+    margin: 0;
+    padding: 0;
 }
 
 
