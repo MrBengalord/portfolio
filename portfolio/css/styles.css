@@ -278,7 +278,7 @@ a:hover {
     box-shadow: 0 0 20px var(--shadow-color);
     margin-bottom: 30px;
     overflow: hidden;
-    position: sticky;
+    position: relative;
     top: 20px;
     z-index: 100;
 }
